@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pierwszy formularz</title>
+</head>
+<body>
+<div id="dodawanie">
+<p><font color="darkblue" size="25">Dodawanie dwóch liczb naturalnych: </font> </p>
+</br>
+ <form action="" id="dodawanie" name="Dodawanie" value="dodawanie">
+ <input type="text" size="20" name="LiczbaX">
+ <p>+</p>
+ <input type="text" size="20" name="LiczbaY">
+ <input type="button" size="20" value="oblicz" onclick="mojaFunkcja ()">
+ </form>
+ 
+ <script type="text/javascript">
+ function mojaFunkcja () {
+ var LiczbaX=document.forms['dodawanie'].LiczbaX.value;
+ var LiczbaY=document.forms['dodawanie'].LiczbaY.value;
+ var wynik=Number(LiczbaX)+Number(LiczbaY);
+ document.write("Wynik dodawania wynosi: "+wynik);
+ }
+ </script>
+</div>
+<div id="odejmowanie">
+<p><font color="darkblue" size="25">Odejmowanie dwóch liczb naturalnych: </font> </p>
+</br>
+ <form action="" id="odejmowanie" name="odejmowanie" value="odejmowanie">
+ <input type="text" size="20" name="LiczbaX">
+ <p>-</p>
+ <input type="text" size="20" name="LiczbaY">
+ <input type="button" size="20" value="oblicz" onclick="mojaFunkcja2 ()">
+ </form>
+ 
+ <script type="text/javascript">
+ function mojaFunkcja2 () {
+ var LiczbaX=document.forms['odejmowanie'].LiczbaX.value;
+ var LiczbaY=document.forms['odejmowanie'].LiczbaY.value;
+ var wynik=Number(LiczbaX)-Number(LiczbaY);
+ document.write("Wynik odejmowania wynosi: "+wynik);
+ }
+ </script>
+</div>
+
+<div id="Mnożenie">
+<p><font color="darkblue" size="25">Mnożenie dwóch liczb naturalnych: </font> </p>
+<form action="" id="Mnożenie" name="Mnożenie">
+<input type="text" size="20" name="LiczbaC">
+<p>*</p>
+<input type="text" size="20" name="LiczbaD">
+<input type="button" value="Wykonaj" onclick="funkcjaMnożenia ()">
+</form>
+<script type="text/javascript">
+function funkcjaMnożenia () {
+var LiczbaC=document.forms['Mnożenie'].LiczbaC.value;
+var LiczbaD=document.forms['Mnożenie'].LiczbaD.value;
+var wynik3=Number(LiczbaC)*Number(LiczbaD);
+document.write("Wynik mnożenia dwóch liczb wynosi: "+wynik3);
+}
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

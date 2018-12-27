@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pierwszy formularz</title>
+</head>
+<body>
+<font size="20" color="darkblue">Kalkulator z funkcją SWITCH!</font>
+<hr>
+<form action="" id="działanie" name="działanie">
+<font size="5" color="pink">podaj liczbę:</font><input type="text" size="40" name="X"><br/>
+<font size="5" color="pink">podaj znak działania:</font><input type="text" size="40" name="znak"></br>
+<font size="5" color="pink">podaj drugą liczbę:</font><input type="text" size="40" name="Y"></br>
+</br>
+<input type="button" name="oblicz" value="Wykonaj działanie" onclick="wykonajDziałanie()">
+</form>
+<script type="text/javascript">
+function wykonajDziałanie () {
+var X=document.forms['działanie'].X.value;
+var znak=document.forms['działanie'].znak.value;
+var Y=document.forms['działanie'].Y.value;
+switch (znak) {
+case '+':
+var wynik=Number(X)+Number(Y);
+document.write("Wynik działania wynosi: "+wynik);
+break;
+}
+switch (znak) {
+case '-':
+var wynik2=Number(X)-Number(Y);
+document.write("Wynik odejmowania wynosi: "+wynik2);
+break;
+}
+switch (znak) {
+case '*':
+var wynik4=Number(X)*Number(Y);
+document.write("Wynik mnożenia wynosi: "+wynik4);
+break;
+}
+switch (znak) {
+case '/':
+var wynik3=Number(X)/Number(Y);
+document.write("Wynik dzielenia wynosi: "+wynik3);
+break;
+}
+}
+</script>
+
+</body>
+</html>
